@@ -250,7 +250,7 @@ public class PDFUtil {
 		String txt = localStripper.getText(doc);
 		logger.info("PDF Text before trimming : " + txt);
 		if(this.bTrimWhiteSpace){
-			txt = txt.trim().replaceAll("\\s+", " ").trim();
+			txt = txt.trim();
 			logger.info("PDF Text after  trimming : " + txt);	
 		}
 		
